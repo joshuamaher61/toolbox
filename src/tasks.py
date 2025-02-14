@@ -190,5 +190,5 @@ def dockertest(c, verbose=0):
 
     client.close()
 
-print("This is my change on my new branch for ENSF 400 Lab 4")
+print("This is my change on my new branch for the ENSF 400 Lab 4")
 
