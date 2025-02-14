@@ -12,7 +12,7 @@ Containerized tools for on-the-go troubleshooting and developing in alien enviro
 
 By: Garth Johnson & others
 
-The purpose of this container image is to provide tools that can help diagnose issues and ease/simplify development struggles on alien envirnments.
+The purpose of this container image is to provide tools that can help diagnose issues and ease/simplify development struggles on alien environments.
 
 Additionally, this container image can easily used for:
 
