@@ -12,13 +12,13 @@ Containerized tools for on-the-go troubleshooting and developing in alien enviro
 
 By: Garth Johnson & others
 
-The purpose of this container image is to provide tools that can help diagnose issues and ease/simplify development struggles on alien envirnments.
+The purpose of this container image is to provide tools that can help diagnose issues and ease/simplify development struggles on alien environments.
 
 Additionally, this container image can easily used for:
 
 - developing new container prototypes
 - debugging container builds and deployments
-- educational intents for container development/examples (i.e. workflows and devcontainers)
+- educational intentions for container development/examples (i.e. workflows and devcontainers)
 
 You can find more at:
 
@@ -31,7 +31,7 @@ You can find more at:
 
 ### Custom Shell
 
-Using the `docker-compose.yml` file (included) makes certain tasks easier.  For example, opening a self-removing ZShell instance can be done lke so:
+Using the `docker-compose.yml` file (included) makes certain tasks easier.  For example, opening a self-removing ZShell instance can be done like so:
 
     docker compose run --rm app1
 
@@ -69,13 +69,13 @@ Some possible tasks to add-to/replace the default options:
 - test for internet access issues
 - scan ports on target host
 - get network response times
-- setup a reverse proxy for remote shell (outbond from container host to remote support system)
+- setup a reverse proxy for remote shell (outbound from container host to remote support system)
 - create a container project from defined template
 
 
 ## Use with Portainer
 
-Use the `portainer-compose.yml` file and modify to your hearts content.
+Use the `portainer-compose.yml` file and modify to your heart's content.
 
 ## Fixed grammer
 
