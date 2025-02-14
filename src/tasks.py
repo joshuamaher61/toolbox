@@ -10,6 +10,7 @@ import speedtest
 ###########################################
 # Library functions
 
+# Isaiah changes to the file
 # Create a logger object 
 logger = logging.getLogger(__name__)
 def _set_log_level(verbose=0) -> None:
