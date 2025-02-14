@@ -83,6 +83,8 @@ Fixed grammar
 
 ## Notes
 
+This a note saying we have implemeted a useful modification
+
 - https://ohmyz.sh/#install
 - https://github.com/deluan/zsh-in-docker/
 - https://github.com/romkatv/powerlevel10k
