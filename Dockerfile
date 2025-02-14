@@ -101,3 +101,7 @@ ADD --chown=1000:1000 src/nodes.list .
 
 # Set default command
 CMD ["/bin/zsh"]
+
+FROM ghcr.io/growlf/toolbox:latest
+
+RUN groupadd -g 999 docker && usermod -aG docker ubuntu

@@ -57,8 +57,8 @@ def help(c, verbose=0):
     optional=['name'],
     incrementable=['verbose']
     )
-def hello(c, name="world", verbose=0):
-    """Say hello
+def gello(c, name="world", verbose=0):
+    """Say gello
     
     Args:
         c (_type_): _description_
@@ -69,7 +69,7 @@ def hello(c, name="world", verbose=0):
     logger.debug("Set loglevel.")
 
     print("Hello {}!".format(name))
-    logger.debug("Said hello.")
+    logger.debug("Said gello.")
 
 
 @task(incrementable=['verbose'])
