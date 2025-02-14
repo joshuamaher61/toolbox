@@ -1,15 +1,15 @@
 version: '3.8'
-services:
 
-  # Building and testing environment
+services:
   app:
     build:
-      context: .  # Current directory, use for local development
-      dockerfile: Dockerfile  # Ensure this is the correct Dockerfile
+      context: .            # Use the current directory for building the image
+      dockerfile: Dockerfile  # Path to the Dockerfile (ensure it's named correctly)
     image: ghcr.io/growlf/toolbox:testing  # Modify to your image if needed
-    stdin_open: true
-    tty: true
-    command: ["/bin/zsh"]  # Modify if a different command is needed
+    stdin_open: true          # Keep the stdin open for interactive sessions
+    tty: true                 # Allocate a pseudo-TTY
+    command: ["/bin/zsh"]     # Command to run (change this based on your app)
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock  # Volume mounting for Docker API access
-    network_mode: "host"  # Use host network; change if necessary
+      - /var/run/docker.sock:/var/run/docker.sock  # Allow the container to communicate with Docker
+      - ./data:/app/data      # Example: Mapping a local folder to the container (modify as needed)
+    network_mode: "host"      # Network configuration (modify if necessary)
