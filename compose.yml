@@ -21,7 +21,7 @@ services:
   # Example container with DooD and host file/net access
   app1:
     image: ghcr.io/growlf/toolbox:latest
-    environment:
+    environment: 
       - TESTVAR=${TESTVAR:-app2}
     stdin_open: true
     tty: true
