@@ -2,3 +2,6 @@
 Basic files added.
 # Fix 11/04/2023 - G
 Grammar in readme
+
+# start specific services in your Docker Compose config 02/14/2025
+Modify devcontainer.json file
