@@ -23,7 +23,7 @@ services:
   app1:
     image: ghcr.io/growlf/toolbox:latest
     environment:
-      - TESTVAR=${TESTVAR:/src}
+      - TESTVAR=${TESTVAR:/src} #this is an environment variable that can be altered in portainer
     stdin_open: true
     tty: true
     command: ["/bin/zsh"]
