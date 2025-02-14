@@ -30,9 +30,10 @@ services:
     volumes:
       - /:/host
       - /var/run/docker.sock:/var/run/docker.sock
-    network_mode: "host"
-    
-    
+      - toolbox_data:/data  # Added persistent storage volume
+    ports:
+      - "8081:80"  # Changed from network_mode to port mapping
+
   # Example of running the same image with different intent
   app2:
     image: ghcr.io/growlf/toolbox:latest
@@ -41,4 +42,8 @@ services:
     stdin_open: true
     tty: true
     command: ["/bin/bash"]
-    
+    ports:
+      - "8082:80"  # Expose a different port for app2
+
+volumes:
+  toolbox_data:
